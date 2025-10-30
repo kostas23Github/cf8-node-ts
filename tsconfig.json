@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src", // Source folder
+    "outDir": "./dist", // Compiled JS output
+
+    /* JS Version & Modules */
+    "target": "es2022", // Modern JS features (async/await, optional chaining)
+    "module": "NodeNext", // Works seamlessly with nodemon + ts-node
+    "lib": ["es2022"], // Includes modern JS built-ins (Map, Set, Promise...)
+
+    /* Type Definitions */
+    "types": ["node", "express", "morgan"], // Global types available
+
+    /* Developer-friendly / Debugging */
+    "sourceMap": true, // Enables debugging with `.ts` lines
+    "esModuleInterop": true, // Allows clean `import express from 'express'`
+    "forceConsistentCasingInFileNames": true, // Prevents case-sensitive import mistakes
+    "skipLibCheck": true, // Faster compilation (skip type checking of node_modules)
+
+    /* Strictness / Code Safety */
+    "strict": true, // All strict checks (null, undefined, etc.)
+    "noImplicitReturns": true, // Warns if a function might not return
+    "noUnusedLocals": true, // Warns about unused variables
+    "noUncheckedIndexedAccess": true, // Adds undefined to indexed access types
+    "exactOptionalPropertyTypes": true, // Makes optional properties more precise
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src"]
+}
