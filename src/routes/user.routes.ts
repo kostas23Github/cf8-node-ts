@@ -7,7 +7,7 @@ import { authenticate } from '../middlewares/auth.middleware';
 
 const router = Router();
 
-router.get("/", authenticate, userCtrl.list);
+router.get("/", authenticate, userCtrl.list); // For someone to be able to get the list of users, he/she must be authenticated, meaning having a valid token.
 // Add validation middleware only for specific routes.
 // Why add it here?
 // To aliviate the API from validation logic further down the line(i.e. the db itself), since it can happen right away.

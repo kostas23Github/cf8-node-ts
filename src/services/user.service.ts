@@ -5,7 +5,7 @@ import User, { IUser } from "../models/user.model";
 const SALT_ROUNDS = 10;
 
 export const findAllUsers = async () => {
-  return await User.find().populate("roles").lean();
+  return await User.find().populate("roles").lean();  // To implement pagination, add filters inside .find().
 };
 
 export const findUserById = async (id: string) => {
