@@ -16,7 +16,7 @@ export const login = async (username: string, password: string) => {
 
   const payload: AuthPayload = {
     username: user.username,
-    email: user.email,
+    email: user.email || "",
     roles: user.roles,
   };
   const token = jwt.sign(payload as any, JWT_SECRET, {expiresIn: '1h'} );
