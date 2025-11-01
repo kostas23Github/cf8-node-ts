@@ -11,6 +11,6 @@ app.use(express.json()); // Parse incoming JSON requests
 
 app.use("/api/users", userRoutes);
 app.use("/api/roles", roleRoutes);
-app.use("api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 export default app;

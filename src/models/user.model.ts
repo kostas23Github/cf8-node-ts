@@ -43,7 +43,7 @@ const UserSchema = new Schema<IUser>(
     lastname: { type: String },
     email: { type: String, index: true },
     address: {
-      // Can be implemented as PhoneSchema.
+      // Can be implemented as AddressSchema.
       area: String,
       street: String,
       number: String,
