@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --runInBand --detectOpenHandles",
     "start": "npx tsc && node dist/server.js",
     "dev": "nodemon --watch src --exec ts-node src/server.ts",
     "teacher's dev": "ts-node-dev --respawn src/server.ts"
@@ -35,6 +35,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.3.0",
     "mongoose": "^8.19.2",
     "mongoose-to-swagger": "^1.5.1",
     "morgan": "^1.10.1",
