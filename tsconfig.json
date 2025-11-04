@@ -10,7 +10,17 @@
     "lib": ["es2022"], // Includes modern JS built-ins (Map, Set, Promise...)
 
     /* Type Definitions */
-    "types": ["node", "express", "morgan"], // Global types available
+    "types": [
+      "node",
+      "express",
+      "morgan",
+      "jest",
+      "bcrypt",
+      "jsonwebtoken",
+      "supertest",
+      "swagger-jsdoc",
+      "swagger-ui-express"
+    ], // Must include all @types packages.
 
     /* Developer-friendly / Debugging */
     "sourceMap": true, // Enables debugging with `.ts` lines
@@ -24,11 +34,10 @@
     "noUnusedLocals": true, // Warns about unused variables
     "noUncheckedIndexedAccess": true, // Adds undefined to indexed access types
     "exactOptionalPropertyTypes": true, // Makes optional properties more precise
-    "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force"
   },
-  "include": ["src"]
+  "include": ["src/**/*", "jest.config.cjs"]
 }
