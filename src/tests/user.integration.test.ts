@@ -20,7 +20,7 @@ describe("User API Tests", () => {
     const hash = await bcrypt.hash("admin1234", 10);
     const user = await User.create(
       {
-        username: "admin",
+        username: "admin1",
         password: hash,
         firstname: "testUser",
         lastname: "testUser",
